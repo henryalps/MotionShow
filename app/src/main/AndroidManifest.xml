@@ -26,7 +26,7 @@
         </activity>
         <meta-data
             android:name="TencentMapSDK"
-            android:value="" />
+            android:value="EGBBZ-OUSCQ-ODZ5S-GEPEJ-7QIQK-MTFRD" />
         <!-- ↑↑↑开发者密钥填到这里 -->
     </application>
 
