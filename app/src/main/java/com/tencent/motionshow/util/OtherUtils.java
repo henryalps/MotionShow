@@ -1,4 +1,4 @@
-package com.tencent.motionshow;
+package com.tencent.motionshow.util;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

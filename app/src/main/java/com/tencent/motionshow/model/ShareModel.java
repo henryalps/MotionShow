@@ -1,9 +1,11 @@
-package com.tencent.motionshow;
+package com.tencent.motionshow.model;
 
 import android.content.Context;
 
 import com.elbbbird.android.socialsdk.SocialSDK;
 import com.elbbbird.android.socialsdk.model.SocialShareScene;
+import com.tencent.motionshow.R;
+import com.tencent.motionshow.util.OtherUtils;
 
 /**
  * Created by henryalps on 5/2/16.
