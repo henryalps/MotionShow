@@ -8,6 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.github.clans.fab.FloatingActionButton;
+import com.joanzapata.iconify.IconDrawable;
+import com.joanzapata.iconify.fonts.FontAwesomeIcons;
 import com.tencent.tencentmap.mapsdk.map.MapView;
 
 /**
@@ -65,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         }
     };
+    private FloatingActionButton mShareBtn;
     private View mControlsView;
     private final Runnable mShowPart2Runnable = new Runnable() {
         @Override
@@ -120,6 +124,19 @@ public class MainActivity extends AppCompatActivity {
      */
     private void initView(Bundle savedInstanceState) {
         mMapView.onCreate(savedInstanceState);
+        initShareBtn();
+    }
+
+    private void initShareBtn() {
+        mShareBtn = (FloatingActionButton) findViewById(R.id.share);
+        mShareBtn.setImageDrawable(new IconDrawable(this,
+                FontAwesomeIcons.fa_share).colorRes(R.color.antiqueWhiteColor).actionBarSize());
+        mShareBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new ShareModel(MainActivity.this).shareImage("");
+            }
+        });
     }
 
     @Override

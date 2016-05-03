@@ -3,4 +3,7 @@
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="share_default_title">炫迹分享</string>
+    <string name="share_default_content">我的跑步轨迹</string>
 </resources>
